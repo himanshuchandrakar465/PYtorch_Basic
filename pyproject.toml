@@ -1,0 +1,23 @@
+[project]
+name = "test-pytorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "himanshuchandrakar465", email = "himanshuchandrakar465@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "ruff>=0.17.0",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+test-pytorch = "test_pytorch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
